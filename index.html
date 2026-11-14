@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mino Angelo Pascua | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf0f8;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #1e3a8a;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #00000015;
+    scroll-margin-top: 85px;
+}
+
+section h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #facc15;
+    padding-bottom: 10px;
+}
+
+/* PROFILE */
+#home {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.profile-pic {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1e3a8a;
+    margin-bottom: 15px;
+}
+
+#home h3 {
+    font-size: 27px;
+    color: #172554;
+}
+
+/* CARDS */
+.card {
+    background: #f1f5f9;
+    padding: 22px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 5px solid #1e3a8a;
+}
+
+.card h3 {
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #1e3a8a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* JAVA CODE */
+.code {
+    background: #111827;
+    color: #4ade80;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    section {
+        width: 95%;
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>MY PERSONAL PORTFOLIO</h1>
+    <p>Junior Programmer Application</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#personal">Personal</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#java">Java</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+
+    <img src="mino.jpg"
+         alt="My Profile Picture"
+         class="profile-pic">
+
+    <h2>Welcome to My Portfolio!</h2>
+
+    <h3>I'm Mino Angelo Pascua</h3>
+
+    <p>
+        I am a student who is passionate about technology,
+        programming, and web development. This portfolio
+        showcases my personal information, educational
+        background, technical skills, and programming projects.
+    </p>
+
+</section>
+
+<!-- PERSONAL INFORMATION -->
+<section id="personal">
+
+    <h2>Personal Information</h2>
+
+    <div class="card">
+        <p><b>Full Name:</b> Mino Angelo Pascua</p>
+        <p><b>Age:</b>19</p>
+        <p><b>Address:</b>Partida I Guimba, Nueva Ecija</p>
+        <p><b>Email:</b>pminoangelo@gmail.com</p>
+        <p><b>Contact Number:</b>09772992296</p>
+    </div>
+
+    <h3>About Me</h3>
+
+    <p>
+        I am a motivated student who enjoys learning
+        programming and exploring new technologies.
+        My goal is to improve my knowledge and become
+        a skilled programmer in the future.
+    </p>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+
+    <h2>Educational Background</h2>
+
+    <div class="card">
+        <h3>College</h3>
+        <p>Our Lady of the Sacred Heart College</p>
+        <p>Course: BS Information Technology</p>
+        <p>Year: 2026 - Present</p>
+    </div>
+
+    <div class="card">
+        <h3>Senior High School</h3>
+        <p>Galvan National High School</p>
+        <p>Strand:TVL-IA</p>
+        <p>Year Graduated:2025</p>
+    </div>
+
+    <div class="card">
+        <h3>Junior High School</h3>
+        <p>Galvan National High School</p>
+        <p>Year Graduated:2023</p>
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Java</span>
+        <span class="skill">Programming</span>
+        <span class="skill">Problem Solving</span>
+        <span class="skill">Computer Literacy</span>
+    </div>
+
+    <div class="card">
+        <h3>Other Competencies</h3>
+        <p>Communication Skills</p>
+        <p>Teamwork</p>
+        <p>Creativity</p>
+        <p>Critical Thinking</p>
+    </div>
+
+</section>
+
+<!-- JAVA CODE -->
+<section id="java">
+
+    <h2>My Java Program</h2>
+
+    <h3>CC102 - Final Performance Task</h3>
+
+    <p>
+        This section presents my final Java console-based
+        game developed using Java programming.
+    </p>
+
+    <div class="code">
+<pre>
+// Replace this sample with your actual Java game code.
+
+import java.util.*;
+
+public class SnakeGame {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+
+        int snake = 1;
+        int food = random.nextInt(10) + 1;
+        int score = 0;
+        String move;
+
+        System.out.println("==================");
+        System.out.println("    SNAKE GAME");
+        System.out.println("==================");
+
+        while (true) {
+
+            System.out.println("\nScore: " + score);
+            System.out.println("Snake Position: " + snake);
+            System.out.println("Food Position: " + food);
+
+            System.out.print("Move (W/A/S/D) or Q to quit: ");
+            move = input.nextLine().toUpperCase();
+
+            if (move.equals("Q")) {
+                break;
+            }
+
+            if (move.equals("D")) {
+                snake++;
+            }
+            else if (move.equals("A")) {
+                snake--;
+            }
+            else if (move.equals("W")) {
+                snake += 2;
+            }
+            else if (move.equals("S")) {
+                snake -= 2;
+            }
+            else {
+                System.out.println("Invalid move!");
+                continue;
+            }
+
+            if (snake < 1 || snake > 10) {
+                System.out.println("Game Over!");
+                break;
+            }
+
+            if (snake == food) {
+                score += 10;
+                System.out.println("You ate the food!");
+
+                food = random.nextInt(10) + 1;
+            }
+        }
+
+        System.out.println("\nGAME FINISHED!");
+        System.out.println("Final Score: " + score);
+
+        input.close();
+    }
+}
+
+</pre>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>Mino Angelo Pascua</h3>
+
+    <p>Personal Portfolio | 2026</p>
+
+    <p>Created using HTML and CSS</p>
+
+</footer>
+
+</body>
+</html>
